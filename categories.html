@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen text-slate-50">
+
+    <!-- NAVBAR -->
+    <nav class="flex justify-center gap-6 px-5 py-4 sticky top-0 z-20 bg-slate-950/80 border-b border-white/10 shadow-[0_10px_30px_rgba(2,6,23,0.18)] backdrop-blur-[14px]">
+        <a class="no-underline text-slate-50 font-semibold tracking-wide transition-all duration-300 ease-in-out hover:text-indigo-300 hover:-translate-y-[1px]" href="index.html">Home</a>
+        <a class="no-underline text-slate-50 font-semibold tracking-wide transition-all duration-300 ease-in-out hover:text-indigo-300 hover:-translate-y-[1px]" href="categories.html">Categories</a>
+        <a class="no-underline text-slate-50 font-semibold tracking-wide transition-all duration-300 ease-in-out hover:text-indigo-300 hover:-translate-y-[1px]" href="important.html">Important</a>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="pt-10 pb-5 px-5 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-50">Review Categories</h1>
+    </section>
+
+    <!-- FILTERS -->
+    <div class="py-[30px] px-[50px] flex flex-wrap gap-[30px] max-md:px-5 max-md:flex-col">
+
+        <div class="bg-slate-800/72 p-5 rounded-[15px] border border-white/12 shadow-custom backdrop-blur-[16px] flex-1 min-w-[250px]">
+            <h3 class="mb-3 text-slate-300 font-semibold tracking-wider uppercase text-sm">Rating</h3>
+            <div class="flex flex-wrap gap-2">
+                <button class="filter-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-rating="all">All</button>
+                <button class="filter-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-rating="5">5★</button>
+                <button class="filter-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-rating="4">4★</button>
+                <button class="filter-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-rating="3">3★</button>
+                <button class="filter-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-rating="2">2★</button>
+                <button class="filter-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-rating="1">1★</button>
+            </div>
+        </div>
+
+        <div class="bg-slate-800/72 p-5 rounded-[15px] border border-white/12 shadow-custom backdrop-blur-[16px] flex-1 min-w-[250px]">
+            <h3 class="mb-3 text-slate-300 font-semibold tracking-wider uppercase text-sm">Review Type</h3>
+            <div class="flex flex-wrap gap-2">
+                <button class="type-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-type="all">All</button>
+                <button class="type-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-type="Delivery">Delivery</button>
+                <button class="type-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-type="Packaging">Packaging</button>
+                <button class="type-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-type="Quality">Quality</button>
+                <button class="type-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-type="Service">Service</button>
+            </div>
+        </div>
+
+        <div class="bg-slate-800/72 p-5 rounded-[15px] border border-white/12 shadow-custom backdrop-blur-[16px] flex-1 min-w-[250px]">
+            <h3 class="mb-3 text-slate-300 font-semibold tracking-wider uppercase text-sm">Platform</h3>
+            <div class="flex flex-wrap gap-2">
+                <button class="platform-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-platform="all">All</button>
+                <button class="platform-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-platform="Amazon">Amazon</button>
+                <button class="platform-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-platform="Flipkart">Flipkart</button>
+                <button class="platform-btn border-none bg-white/6 text-slate-50 py-2 px-3 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-600 hover:-translate-y-[2px] hover:shadow-[0_10px_22px_rgba(99,102,241,0.25)]" data-platform="Myntra">Myntra</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- REVIEWS GRID -->
+    <div class="pt-5 pb-[60px] px-[50px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-md:px-5" id="categoryReviews"></div>
+
+    <!-- MODAL -->
+    <div class="fixed inset-0 bg-slate-950/75 items-center justify-center p-5 z-50" id="reviewModal" style="display: none;">
+        <div class="w-[min(500px,100%)] bg-slate-900/95 p-[30px] rounded-[20px] border border-white/12 shadow-custom backdrop-blur-[16px] animate-pop relative">
+            <button class="absolute top-4 right-4 border-none bg-transparent text-slate-400 hover:text-slate-100 text-xl cursor-pointer" onclick="closeModal()">✖</button>
+            <h2 id="modalEcommerce" class="text-2xl font-extrabold text-slate-50 tracking-tight mb-2"></h2>
+            <div class="flex justify-between items-center my-4 gap-3">
+                <span id="modalName" class="font-semibold text-slate-200"></span>
+                <span id="modalDate" class="text-sm text-slate-400"></span>
+            </div>
+            <p id="modalId" class="text-xs text-slate-500 font-mono"></p>
+            <p id="modalRating" class="text-yellow-400 text-lg mt-2"></p>
+            <div class="mt-5 p-5 border border-white/12 rounded-lg bg-white/4">
+                <p id="modalReview" class="text-slate-200 italic"></p>
+            </div>
+            <button id="importantBtn" class="mt-6 w-full py-3 px-5 border-none bg-gradient-to-r from-indigo-500 to-purple-600 text-slate-50 font-semibold rounded-xl cursor-pointer shadow-[0_10px_20px_rgba(99,102,241,0.25)] transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_15px_25px_rgba(99,102,241,0.35)] active:translate-y-0">
+                ☆ Mark Important
+            </button>
+        </div>
+    </div>
+
+    <script src="js/categories.js"></script>
+</body>
+</html>

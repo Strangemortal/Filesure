@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Reviews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen text-slate-50">
+
+    <!-- NAVBAR -->
+    <nav class="flex justify-center gap-6 px-5 py-4 sticky top-0 z-20 bg-slate-950/80 border-b border-white/10 shadow-[0_10px_30px_rgba(2,6,23,0.18)] backdrop-blur-[14px]">
+        <a class="no-underline text-slate-50 font-semibold tracking-wide transition-all duration-300 ease-in-out hover:text-indigo-300 hover:-translate-y-[1px]" href="index.html">Home</a>
+        <a class="no-underline text-slate-50 font-semibold tracking-wide transition-all duration-300 ease-in-out hover:text-indigo-300 hover:-translate-y-[1px]" href="categories.html">Categories</a>
+        <a class="no-underline text-slate-50 font-semibold tracking-wide transition-all duration-300 ease-in-out hover:text-indigo-300 hover:-translate-y-[1px]" href="important.html">Important</a>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="pt-10 pb-5 px-5 text-center animate-fade-up animate-float">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-50">Important Reviews</h1>
+        <p class="text-slate-300 mt-4 text-lg max-w-xl mx-auto">
+            Reviews marked for future reference.
+        </p>
+    </section>
+
+    <!-- MAIN GRID -->
+    <main>
+        <div id="importantContainer" class="pt-5 pb-[60px] px-[50px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 max-md:px-5"></div>
+    </main>
+
+    <!-- MODAL -->
+    <div class="fixed inset-0 bg-slate-950/75 items-center justify-center p-5 z-50" id="reviewModal" style="display: none;">
+        <div class="w-[min(500px,100%)] bg-slate-900/95 p-[30px] rounded-[20px] border border-white/12 shadow-custom backdrop-blur-[16px] animate-pop relative">
+            <button class="absolute top-4 right-4 border-none bg-transparent text-slate-400 hover:text-slate-100 text-xl cursor-pointer" onclick="closeModal()">✖</button>
+            <h2 id="modalEcommerce" class="text-2xl font-extrabold text-slate-50 tracking-tight mb-2"></h2>
+            <div class="flex justify-between items-center my-4 gap-3">
+                <span id="modalName" class="font-semibold text-slate-200"></span>
+                <span id="modalDate" class="text-sm text-slate-400"></span>
+            </div>
+            <p id="modalId" class="text-xs text-slate-500 font-mono"></p>
+            <p id="modalRating" class="text-yellow-400 text-lg mt-2"></p>
+            <div class="mt-5 p-5 border border-white/12 rounded-lg bg-white/4">
+                <p id="modalReview" class="text-slate-200 italic"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/important.js"></script>
+</body>
+</html>
